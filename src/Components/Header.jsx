@@ -1,9 +1,7 @@
-import React from "react";
 import { NavLink } from "react-router";
 function Header() {
   return (
-    <div className="py-5 pl-20 md:pl-200 pr-4">
-      <div className="flex justify-around">
+      <div className="flex justify-around py-6 px-5">
         <NavLink to="/chatmax" className={({ isActive }) =>
             ` text-lg md:text-base ${
               isActive ? "text-[var(--chatmax-color)]" : "text-white"
@@ -19,7 +17,6 @@ function Header() {
               isActive ? "text-[var(--tofuss-color)]" : "text-white"
             } hover:text-[var(--tofuss-color)] hover:underline`
           }>Tofuss</NavLink>
-    </div>
     </div>
   );
 }
